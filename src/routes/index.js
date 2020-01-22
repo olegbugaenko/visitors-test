@@ -30,7 +30,7 @@ module.exports = (app) => {
 
     app.get('/visits/browser/:browserName',async (req, res) => {
         try {
-            const visitsByPage = await VisitorsModule.getVisitorsByField('browser', req.params.browserName)
+            const visitsByPage = await VisitorsModule.getPageViewsByBrowser(req.params.browserName)
             res.send(visitsByPage);
         } catch (e) {
             res.status(400);
@@ -40,7 +40,7 @@ module.exports = (app) => {
 
     app.get('/visits/country/:country',async (req, res) => {
         try {
-            const visitsByPage = await VisitorsModule.getVisitorsByField('country', req.params.country)
+            const visitsByPage = await VisitorsModule.getPageViewsByCountry(req.params.country)
             res.send(visitsByPage);
         } catch (e) {
             res.status(400);
