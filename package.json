@@ -1,0 +1,28 @@
+{
+  "name": "playbuzz-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.13",
+    "geoip-lite": "^1.4.0",
+    "iplocation": "^6.1.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.8.9"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@modules": "src/modules",
+    "@routes": "src/routes",
+    "@helpers": "src/helpers"
+  }
+}
