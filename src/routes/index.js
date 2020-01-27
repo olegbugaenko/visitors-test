@@ -1,4 +1,4 @@
-const { VisitorsModule } = require('@modules/visitors');
+const { VisitorsModule } = require('@services/visitors');
 
 module.exports = (app) => {
     app.post('/visits', async (req, res) => {

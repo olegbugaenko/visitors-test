@@ -1,5 +1,5 @@
 const iplocation = require("iplocation").default;
-const {UserSessionModel} = require('@helpers/mongo/user-session-model');
+const {UserSessionModel} = require('@models/user-session-model');
 
 const getUserSession = async ({
     userId,

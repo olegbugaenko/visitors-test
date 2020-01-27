@@ -21,8 +21,10 @@
   },
   "_moduleAliases": {
     "@root": ".",
-    "@modules": "src/modules",
+    "@services": "src/services",
     "@routes": "src/routes",
-    "@helpers": "src/helpers"
+    "@helpers": "src/helpers",
+    "@models": "src/models",
+    "@middleware": "src/middleware"
   }
 }

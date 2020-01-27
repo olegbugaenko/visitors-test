@@ -1,5 +1,5 @@
-const {VisitorModel} = require('@helpers/mongo/visitors-model');
-const {UserSessionModel} = require('@helpers/mongo/user-session-model');
+const {VisitorModel} = require('@models/visitors-model');
+const {UserSessionModel} = require('@models/user-session-model');
 const {applySessionToUser} = require('@helpers/session');
 
 class VisitorsModule {
